@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer components {
+  .sidebar {
+    @apply bg-[#1f2937] flex flex-col text-white h-screen p-5 px-3;
+  }
+
+  .link {
+    @apply text-white hover:scale-105 transition-transform;
+  }
+
+  .nested,
+  .deepNested {
+    @apply ml-3 flex flex-col;
+  }
+
+  .link.active {
+    @apply font-bold;
+  }
+}
